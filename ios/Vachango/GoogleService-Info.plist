@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>200568144927-dgtm80qklk0cenecn7kcl80r2g9vf81a.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.200568144927-dgtm80qklk0cenecn7kcl80r2g9vf81a</string>
+	<key>ANDROID_CLIENT_ID</key>
+	<string>200568144927-noqrdndtknpokb2mvir32cl81l28gied.apps.googleusercontent.com</string>
+	<key>API_KEY</key>
+	<string>AIzaSyD6HseyGKhwA2t2U4K0Lpb6e1pQdgpqXzU</string>
+	<key>GCM_SENDER_ID</key>
+	<string>200568144927</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>org.reactjs.native.example.Vachango</string>
+	<key>PROJECT_ID</key>
+	<string>dev-vachan</string>
+	<key>STORAGE_BUCKET</key>
+	<string>dev-vachan.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:200568144927:ios:082934982b1082b261012a</string>
+	<key>DATABASE_URL</key>
+	<string>https://dev-vachan.firebaseio.com</string>
+</dict>
+</plist>
