@@ -23,30 +23,58 @@ class About extends Component {
       <View style={[this.styles.container, { height: screenHeight }]}>
         <ScrollView >
           <View style={this.styles.textContainer}>
-            <Text textBreakStrategy={'simple'} style={this.styles.TitleText}>Release Notes for VachanGo 11/11/2020</Text>
             <Text style={this.styles.textStyle} textBreakStrategy={'simple'}>
-              The Vachan Project <Text style={this.styles.linkText} onPress={() => { Linking.openURL('http://thevachanproject.in/') }}>(http://thevachanproject.in/)</Text> was established to provide free access to digital scripture engagement resources. The VachanGo app, developed under it’s umbrella is a cross platform Bible study tool in Indian languages that brings you biblical content under multiple licensing arrangements. Hence, the content available to you for personal or group Bible Study, is not for further redistribution in any other format or platform without explicit permission from the original copyright owners.{'\n'}
-              <Text textBreakStrategy={'simple'} style={this.styles.TitleText}>{'\n'}Content and Technology{'\n'}</Text>
-              VachanGo is being made available under a collaborative arrangement among Friends of Agape, unfoldingWord, Wycliffe Associates, Crossway, Bridgeway Publications, Dusty Sandals, BibleProject, Visual Unit, and is brought to you by Bridge Connectivity Solutions Pvt. Ltd. (BCS) <Text style={this.styles.linkText} onPress={() => { Linking.openURL('https://www.bridgeconn.com') }}>(https://www.bridgeconn.com)</Text> who is the localization and technology partner.{'\n'}
-              <Text textBreakStrategy={'simple'} style={this.styles.TitleText}>{'\n'}Release v1.0{'\n'}</Text>
+              <Text textBreakStrategy={'simple'} style={this.styles.TitleText}>Introduction{'\n'}</Text>
+              The VachanGo app is a Bible Study app developed to facilitate digital scripture engagement in Indian Languages. It is a companion app for the  <Text style={this.styles.linkText} onPress={() => { Linking.openURL('https://vachanonline.com') }}>https://vachanonline.com </Text>website.{'\n'}
+              Both the VachanGo Bible app and the VachanOnline.com Bible website come to you under aegis of The Vachan Project initiative, established to provide free access to Bible Study tools in Indian Languages.{'\n'}
+              Since the content is brought to you under multiple licensing arrangements, it is requested that it not be further redistributed in any other format or platform without explicit permission from the original copyright owners.{'\n'}
+              <Text textBreakStrategy={'simple'} style={this.styles.TitleText}>{'\n'}Content and Technology Partners{'\n'}</Text>
+              VachanGo is being made available under a collaborative arrangement of Friends of Agape, unfoldingWord, Wycliffe Associates, Crossway, Bridgeway Publications, Dusty Sandals, BibleProject, Visual Unit, and is brought to you by Bridge Connectivity Solutions Pvt. Ltd. (BCS) <Text style={this.styles.linkText} onPress={() => { Linking.openURL('https://www.bridgeconn.com') }}>(https://www.bridgeconn.com)</Text> who is the localization and technology partner.{'\n'}
+              <Text textBreakStrategy={'simple'} style={this.styles.TitleText}>{'\n'}Release Notes (17/03/2021) v1.1.1</Text>
+              <Text textBreakStrategy={'simple'} style={this.styles.rlsNoteTitleText}>{'\n'}Bug Fixes:{'\n'}</Text>
+              <Text textBreakStrategy={'simple'} style={this.styles.bulletIcon}>{'\u2022' + " "}</Text>Fixed Google Authentication issue{'\n'}
+            
+              <Text textBreakStrategy={'simple'} style={this.styles.TitleText}>{'\n'}Release Notes (05/03/2021) v1.1</Text>
+              <Text textBreakStrategy={'simple'} style={this.styles.rlsNoteTitleText}>{'\n'}Content Additions (using Vachan API’s):{'\n'}</Text>
+              <Text textBreakStrategy={'simple'} style={this.styles.bulletIcon}>{'\u2022' + " "}</Text>Bibles: Nagamese NT{'\n'}
+              <Text textBreakStrategy={'simple'} style={this.styles.bulletIcon}>{'\u2022' + " "}</Text>Commentary: Bridgeway Bible Commentary (Marathi & Gujarati){'\n'}
+              <Text textBreakStrategy={'simple'} style={this.styles.bulletIcon}>{'\u2022' + " "}</Text>Dictionary: Easton’s Bible Dictionary (English){'\n'}
+              <Text textBreakStrategy={'simple'} style={this.styles.bulletIcon}>{'\u2022' + " "}</Text>Videos: BibleProject (Bengali & Malayalam){'\n'}
+              <Text textBreakStrategy={'simple'} style={this.styles.rlsNoteTitleText}>{'\n'}Feature Additions:{'\n'}</Text>
+              <Text textBreakStrategy={'simple'} style={this.styles.bulletIcon}>{'\u2022' + " "}</Text>Multi-colour highlights{'\n'}
+              <Text textBreakStrategy={'simple'} style={this.styles.bulletIcon}>{'\u2022' + " "}</Text>Pinch zoom in and out for reading page{'\n'}
+              <Text textBreakStrategy={'simple'} style={this.styles.bulletIcon}>{'\u2022' + " "}</Text>Added Hints section{'\n'}
+              <Text textBreakStrategy={'simple'} style={this.styles.bulletIcon}>{'\u2022' + " "}</Text>Added appropriate user-friendly alerts for required screens{'\n'}
+
+              <Text textBreakStrategy={'simple'} style={this.styles.rlsNoteTitleText}>{'\n'}Bug Fixes:{'\n'}</Text>
+              <Text textBreakStrategy={'simple'} style={this.styles.bulletIcon}>{'\u2022' + " "}</Text>Fixed known cosmetic issues{'\n'}
+              <Text textBreakStrategy={'simple'} style={this.styles.bulletIcon}>{'\u2022' + " "}</Text>Fixed known usability issues{'\n'}
+              <Text textBreakStrategy={'simple'} style={this.styles.bulletIcon}>{'\u2022' + " "}</Text>Fixed issues in bookmarks and notes{'\n'}
+              <Text textBreakStrategy={'simple'} style={this.styles.bulletIcon}>{'\u2022' + " "}</Text>Fixed issue in sync of Notes data{'\n'}
+              <Text textBreakStrategy={'simple'} style={this.styles.bulletIcon}>{'\u2022' + " "}</Text>Fixed issue of duplication in Video pane{'\n'}
+              <Text textBreakStrategy={'simple'} style={this.styles.bulletIcon}>{'\u2022' + " "}</Text>Fixed Parallel-view issues{'\n'}
+              <Text textBreakStrategy={'simple'} style={this.styles.rlsNoteTitleText}>{'\n'}Operations Update:{'\n'}</Text>
+              <Text textBreakStrategy={'simple'} style={this.styles.bulletIcon}>{'\u2022' + " "}</Text>Added metadata-based filtering for only published bibles to be displayed on Vachan platforms{'\n'}
+              <Text textBreakStrategy={'simple'} style={this.styles.bulletIcon}>{'\u2022' + " "}</Text>Handle use-cases when Bible has only OT or NT books{'\n'}
+              <Text textBreakStrategy={'simple'} style={this.styles.TitleText}>{'\n'}Release Notes v1.0{'\n'}</Text>
               <Text textBreakStrategy={'simple'} style={{ fontWeight: 'bold' }}>Platform: </Text>
-              The mobile app is written in ReactNative, powered by Postgres and Python APIs  (VachanEngine) in the back-end.{'\n'}
-              <Text textBreakStrategy={'simple'} style={this.styles.TitleText}>{'\n'}Content Available :{'\n'}</Text>
+              React-Native, powered by Postgres and Python APIs (VachanEngine) in the back-end.
+              <Text textBreakStrategy={'simple'} style={this.styles.rlsNoteTitleText}>{'\n'}Content Available :{'\n'}</Text>
               <Text textBreakStrategy={'simple'} style={this.styles.bulletIcon}>{'\u2022' + " "}</Text>Bibles: Latest versions of IRV Bibles in all available Indian Gateway languages{'\n'}
               <Text textBreakStrategy={'simple'} style={this.styles.bulletIcon}>{'\u2022' + " "}</Text>Commentary: IRV Notes (Hindi) +  Bridgeway Bible Commentary (English){'\n'}
               <Text textBreakStrategy={'simple'} style={this.styles.bulletIcon}>{'\u2022' + " "}</Text>Dictionary: IRV Dictionary (Hindi){'\n'}
               <Text textBreakStrategy={'simple'} style={this.styles.bulletIcon}>{'\u2022' + " "}</Text>Infographics: VisualUnit (Hindi) {'\n'}
               <Text textBreakStrategy={'simple'} style={this.styles.bulletIcon}>{'\u2022' + " "}</Text>Audio: IRV NT Bible (Hindi){'\n'}
-              <Text textBreakStrategy={'simple'} style={this.styles.bulletIcon}>{'\u2022' + " "}</Text>Video: BibleProject (English, Hindi & Telugu) {'\n'}
-              <Text textBreakStrategy={'simple'} style={this.styles.TitleText}>{'\n'}Features:{'\n'}</Text>
+              <Text textBreakStrategy={'simple'} style={this.styles.bulletIcon}>{'\u2022' + " "}</Text>Video: BibleProject (English, Hindi & Telugu){'\n'}
+              <Text textBreakStrategy={'simple'} style={this.styles.rlsNoteTitleText}>{'\n'}Features:{'\n'}</Text>
               <Text textBreakStrategy={'simple'} style={this.styles.bulletIcon}>{'\u2022' + " "}</Text>Clean Bible reading pane with section-headings.{'\n'}
               <Text textBreakStrategy={'simple'} style={this.styles.bulletIcon}>{'\u2022' + " "}</Text>Parallel 2-pane feature to display Bibles, Commentaries etc.{'\n'}
               <Text textBreakStrategy={'simple'} style={this.styles.bulletIcon}>{'\u2022' + " "}</Text>Personalization using simple login.{'\n'}
               <Text textBreakStrategy={'simple'} style={this.styles.bulletIcon}>{'\u2022' + " "}</Text>Bookmarks, Highlights & Notes.{'\n'}
               <Text textBreakStrategy={'simple'} style={this.styles.bulletIcon}>{'\u2022' + " "}</Text>Basic Bible search.{'\n'}
-              <Text textBreakStrategy={'simple'} style={this.styles.TitleText}>{'\n'}Backend Services:{'\n'}</Text>
-              <Text textBreakStrategy={'simple'} style={this.styles.bulletIcon}>{'\u2022' + " "}</Text>DigitalOcean Spaces with CDN to serve Audio & Video  {'\n'}
-              <Text textBreakStrategy={'simple'} style={this.styles.bulletIcon}>{'\u2022' + " "}</Text>Firebase for personalisation and synchronisation {'\n'}
+              <Text textBreakStrategy={'simple'} style={this.styles.rlsNoteTitleText}>{'\n'}Backend Services:{'\n'}</Text>
+              <Text textBreakStrategy={'simple'} style={this.styles.bulletIcon}>{'\u2022' + " "}</Text>DigitalOcean Spaces with CDN to serve Audio & Video{'\n'}
+              <Text textBreakStrategy={'simple'} style={this.styles.bulletIcon}>{'\u2022' + " "}</Text>Firebase for personalisation and synchronisation{'\n'}
               <Text textBreakStrategy={'simple'} style={this.styles.TitleText}>{'\n'}Contact Us</Text>{'\n'}
               thevachanproject@gmail.com
             </Text>

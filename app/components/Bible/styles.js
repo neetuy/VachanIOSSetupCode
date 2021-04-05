@@ -1,4 +1,5 @@
 import { StyleSheet, Dimensions } from 'react-native'
+import { color } from 'react-native-reanimated';
 const width = Dimensions.get('window').width;
 import Color from '../../utils/colorConstants'
 
@@ -220,8 +221,8 @@ export const styles = (colorFile, sizeFile) => {
             alignItems: 'center'
         },
         reloadText: {
-            fontSize: 18,
-            color: Color.White,
+            fontSize: sizeFile.contentText,
+            color: colorFile.textColor,
             textAlign: 'center'
         },
         emptyMessageIcon: {

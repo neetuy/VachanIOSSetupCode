@@ -1,8 +1,11 @@
 import React, { Component } from 'react';
 import {
   Text,
+  Alert
 } from 'react-native';
 import { connect } from 'react-redux'
+import {  selectContent } from '../../store/action/'
+
 import { getResultText } from '../../utils/UtilFunctions'
 import Icon from 'react-native-vector-icons/MaterialCommunityIcons'
 import Color from '../../utils/colorConstants'
@@ -26,6 +29,13 @@ class VerseView extends Component {
   has(selectedReferences, obj) {
     for (var i = 0; i < selectedReferences.length; i++) {
       if (selectedReferences[i] == obj) {
+        if(this.props.visibleParallelView){
+          this.props.selectContent({modalVisible:false,
+            parallelMetaData:null,
+            visibleParallelView:false,
+            parallelLanguage:null})
+        Alert.alert("","Your text is selected, please choose any option from the bottom bar or unselect the text.")
+        }
         return true;
       }
     }
@@ -193,7 +203,13 @@ const mapStateToProps = state => {
     sourceId: state.updateVersion.sourceId,
     sizeFile: state.updateStyling.sizeFile,
     colorFile: state.updateStyling.colorFile,
+    visibleParallelView: state.selectContent.visibleParallelView,
+  }
+}
+const mapDispatchToProps = dispatch => {
+  return {
+  selectContent: (payload) => dispatch(selectContent(payload)),
   }
 }
 
-export default connect(mapStateToProps, null)(VerseView)
+export default connect(mapStateToProps, mapDispatchToProps)(VerseView)

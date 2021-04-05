@@ -16,7 +16,6 @@ class Note extends Component {
 
   static navigationOptions = ({ navigation }) => ({
     headerTitle: 'Notes',
-
   });
 
   constructor(props) {

@@ -109,7 +109,7 @@ export class InfographicsImage extends React.Component {
 	<View style={this.styles.wrapper}>
 	{this.state.isLoading && 
 	<View style={{flex: 1,justifyContent: 'center', alignItems: 'center'}}>
-  <ActivityIndicator animate={true} size={'large'} /> 
+  <ActivityIndicator animate={true} size="large" /> 
          </View>}
         {this.state.image &&
         <PanGestureHandler

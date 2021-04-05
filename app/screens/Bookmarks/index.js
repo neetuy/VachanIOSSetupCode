@@ -4,8 +4,7 @@ import {
   View,
   TouchableOpacity,
   FlatList,
-  ActivityIndicator,
-  StatusBar
+  ActivityIndicator
 } from 'react-native';
 import Icon from 'react-native-vector-icons/MaterialIcons';
 import { bookStyle } from './styles.js'
@@ -147,7 +146,6 @@ class BookMarks extends Component {
     return (
       <View style={this.styles.container}>
         {this.state.isLoading && <ActivityIndicator animate={true} style={{ justifyContent: 'center', alignSelf: 'center' }} />}
-        {/* <StatusBar barStyle="light-content" backgroundColor="#1D6D91" /> */}
         <FlatList
           data={this.state.bookmarksList}
           contentContainerStyle={this.state.bookmarksList.length === 0 && this.styles.centerEmptySet}

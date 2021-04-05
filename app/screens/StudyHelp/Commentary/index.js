@@ -17,7 +17,6 @@ import HTML from 'react-native-render-html';
 import vApi from '../../../utils/APIFetch';
 import securityVaraibles from '../../../../securityVaraibles';
 import bookNameList from '../../../models/bookNameList';
-import { color } from 'react-native-reanimated';
 
 const commentaryKey = securityVaraibles.COMMENTARY_KEY ? '?key=' + securityVaraibles.COMMENTARY_KEY : ''
 
@@ -43,15 +42,19 @@ class Commentary extends Component {
     }
   }
   componentDidMount(){
-    const url = "commentaries/"+this.props.parallelLanguage.sourceId + "/" + this.props.bookId + "/" + this.props.currentVisibleChapter + commentaryKey
-    this.props.vachanAPIFetch(url)
-    this.fetchBookName()
+    if(this.props.parallelLanguage){
+      let url = "commentaries/"+this.props.parallelLanguage.sourceId + "/" + this.props.bookId + "/" + this.props.currentVisibleChapter + commentaryKey
+      this.props.vachanAPIFetch(url)
+      this.fetchBookName()
+    }
   }
   componentDidUpdate(prevProps, prevState) {
     if (this.props.bookId != prevProps.bookId || prevProps.currentVisibleChapter != this.props.currentVisibleChapter) {
+      if(this.props.parallelLanguage){
       const url = "commentaries/"+this.props.parallelLanguage.sourceId + "/" + this.props.bookId + "/" + this.props.currentVisibleChapter + commentaryKey
       this.props.vachanAPIFetch(url)
       this.fetchBookName()
+      }
     }
   }
 
@@ -60,8 +63,10 @@ class Commentary extends Component {
       this.alertPresent = true;
       if (this.props.error || this.state.error) {
         Alert.alert("", "Check your internet connection", [{ text: 'OK', onPress: () => { this.alertPresent = false } }], { cancelable: false });
+        if(this.props.parallelLanguage){
         const url ="commentaries/"+this.props.parallelLanguage.sourceId + "/" + this.props.bookId + "/" + this.props.currentVisibleChapter + commentaryKey
         this.props.vachanAPIFetch(url)
+        }
       } else {
         this.alertPresent = false;
       }
@@ -102,7 +107,8 @@ class Commentary extends Component {
     var bookName = null
     if (this.state.bookNameList) {
         for (var i = 0; i <= this.state.bookNameList.length - 1; i++) {
-            if (this.state.bookNameList[i].language.name === this.props.parallelLanguage.languageName.toLowerCase()) {
+         let parallelLanguage =this.props.parallelLanguage && this.props.parallelLanguage.languageName.toLowerCase()
+            if (this.state.bookNameList[i].language.name === parallelLanguage) {
               for (var j = 0; j <= this.state.bookNameList[i].bookNames.length - 1; j++) {
                     var bId = this.state.bookNameList[i].bookNames[j].book_code
                     if (bId == this.props.bookId){
@@ -119,7 +125,7 @@ class Commentary extends Component {
       <View style={this.styles.container}>
         <Header style={{ backgroundColor: Color.Blue_Color, height: 40, borderLeftWidth: 0.5, borderLeftColor: Color.White }} >
           <Body>
-            <Title style={{ fontSize: 16,color:Color.White }}>{this.props.parallelLanguage.versionCode}</Title>
+            <Title style={{ fontSize: 16 }}>{this.props.parallelLanguage && this.props.parallelLanguage.versionCode}</Title>
           </Body>
           <Right>
             <Button transparent onPress={() => this.props.toggleParallelView(false)}>
@@ -134,6 +140,7 @@ class Commentary extends Component {
               <ReloadButton
                 styles={this.styles}
                 reloadFunction={this.updateData}
+                message={null}
               />
             </View>
             :

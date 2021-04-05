@@ -85,7 +85,10 @@ class DrawerScreen extends Component {
               </TouchableOpacity>
             )
           }
+           {/*for appstore app*/}
         <Text style={this.styles.versionText}>APP VERSION {this.state.currentVersion}</Text>
+        { /*//for tesing */}
+        {/* <Text style={this.styles.versionText}>APP VERSION 1.1.0</Text> */}
         </ScrollView>
       </View>
     );

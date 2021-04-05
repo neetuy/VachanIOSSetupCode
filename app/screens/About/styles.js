@@ -45,6 +45,12 @@ export const aboutPage = (colorFile, sizeFile) => {
             fontSize: 26,
             color: colorFile.iconColor,
             lineHeight: sizeFile.lineHeight,
+        },
+        rlsNoteTitleText:{
+            paddingTop: 8,
+            fontSize: sizeFile.contentText,
+            color: colorFile.sectionHeading,
+            lineHeight: sizeFile.lineHeight
         }
     })
 

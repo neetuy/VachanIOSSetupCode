@@ -3,7 +3,6 @@
 import React from 'react';
 import { View, Text, FlatList, TouchableOpacity } from 'react-native';
 import { Card, CardItem } from 'native-base'
-import APIFetch from '../../../utils/APIFetch'
 import Icon from 'react-native-vector-icons/MaterialIcons'
 import { connect } from 'react-redux'
 import { styles } from './styles.js'

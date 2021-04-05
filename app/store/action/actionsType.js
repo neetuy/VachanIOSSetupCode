@@ -47,10 +47,6 @@ export const FECTH_ALL_LANGUAGE = 'fetch_all_laguages';
 export const ALL_LANGUAGE_SUCCESS = 'all_language_success';
 export const ALL_LANGUAGE_FAILURE = 'all_language_failure'
 
-export const FETCH_PARALLEL_BIBLE = 'fetch_parallel_bible';
-export const PARALLEL_BIBLE_SUCCESS = 'parallel_bible_success';
-export const PARALLEL_BIBLE_FAILURE = 'parallel_bible_failure';
-
 export const USER_INFO = 'user_info'
 
 export const SELECT_CONTENT = 'select_content'

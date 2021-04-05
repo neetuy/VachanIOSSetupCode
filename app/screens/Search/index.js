@@ -10,7 +10,6 @@ import {
 } from 'react-native';
 import Icon from 'react-native-vector-icons/MaterialIcons'
 import DbQueries from '../../utils/dbQueries.js'
-// import APIFetch from '../../utils/APIFetch'
 import { getBookChaptersFromMapping, getBookNumberFromMapping, getResultText } from '../../utils/UtilFunctions'
 import SearchTab from '../../components/SearchTab/SearchTab'
 import { updateVersionBook, updateVersion, fetchVersionBooks, updateMetadata } from '../../store/action/'
@@ -330,7 +329,6 @@ class Search extends Component {
       sourceId: item.sourceId, languageCode: item.languageCode,
       languageName: item.languageName, versionCode: item.versionCode,
       downloaded: item.downloaded, books: item.books,metadata:item.metadata
-
     })
   }
   render() {
@@ -341,7 +339,7 @@ class Search extends Component {
           <Text style={this.styles.headerStyle}>Bible</Text>
           <TouchableOpacity style={{ backgroundColor: Color.Blue_Color, padding: 8, borderRadius: 8 }} onPress={() => this.props.navigation.navigate('LanguageList', { updateLangVer: this.updateLangVer })}>
             <Text style={this.styles.text}>
-              {this.props.languageName.charAt(0).toUpperCase() + this.props.languageName.slice(1)} {this.state.versionCode.toUpperCase()}
+              {this.state.languageName.charAt(0).toUpperCase() + this.state.languageName.slice(1)} {this.state.versionCode.toUpperCase()}
             </Text>
           </TouchableOpacity>
         </View>

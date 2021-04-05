@@ -34,9 +34,9 @@ class Setting extends Component {
     await this.props.updateFontSize(value)
   }
 
-  async onColorModeChange(value) {
-    await this.props.updateColorMode(value)
-  }
+  // async onColorModeChange(value) {
+  //   await this.props.updateColorMode(value)
+  // }
 
   onVerseInLineModeChange = () => {
     this.setState({ verseInLine: !this.state.verseInLine }, () => {
@@ -85,7 +85,7 @@ class Setting extends Component {
                         name="brightness-7"
                         style={this.styles.modeIconCustom}
                         color={nightModeIconColor}
-                        onPress={() => this.onColorModeChange(0)}
+                        onPress={() => this.props.updateColorMode(0)}
                       />
                     </View>
                     <View style={this.styles.cardItemRow}>
@@ -99,7 +99,7 @@ class Setting extends Component {
                         name="brightness-5"
                         style={this.styles.modeIconCustom}
                         color={dayModeIconColor}
-                        onPress={() => this.onColorModeChange(1)}
+                        onPress={() => this.props.updateColorMode(1)}
                       />
                     </View>
                   </View>

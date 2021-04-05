@@ -12,5 +12,4 @@ export { queryDownloadedBook, downloadedBookSuccess, downloadedBookFailure } fro
 
 export { fetchAllContent, allContentSuccess, allContentFailure } from './apiFetch/fetchAllContentType/fetchAllContent'
 export { fetchAllLanguage, allLanguageSuccess, allLanguageFailure } from './apiFetch/fetchAllContentType/allLanguages'
-export { fetchParallelBible, parallelBibleSuccess, parallelBiblefailure } from './apiFetch/ParallelBible'
 export { userInfo } from './UserInfo'

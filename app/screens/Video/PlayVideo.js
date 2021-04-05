@@ -52,7 +52,7 @@ class PlayVideo extends Component {
                 <Text style={this.styles.title}>
                     {this.state.title}
                 </Text>
-                {this.state.isLoading ? <View style={{justifyContent:'center',alignItems:'center'}}><ActivityIndicator animate={true} size={'large'} /></View>: null}
+                {this.state.isLoading ? <View style={{justifyContent:'center',alignItems:'center'}}><ActivityIndicator animate={true} size='large' /></View>: null}
                 <YoutubePlayer
                     ref={'playerRef'}
                     height={'36%'}

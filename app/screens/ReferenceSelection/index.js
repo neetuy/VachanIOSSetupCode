@@ -17,7 +17,7 @@ class ReferenceSelection extends Component {
     return {
       headerStyle: {
         backgroundColor: Color.Blue_Color,
-        height:36,
+        height: 36,
         elevation: 0,
         shadowOpacity: 0,
       },
@@ -42,11 +42,11 @@ class ReferenceSelection extends Component {
   }
 
   updateSelectedBook = (item) => {
-    this.setState({
-      selectedBookId: item.bookId,
-      selectedBookName: item.bookName,
-      totalChapters: item.numOfChapters,
-    })
+      this.setState({
+        selectedBookId: item.bookId,
+        selectedBookName: item.bookName,
+        totalChapters: item.numOfChapters,
+      })
   }
   // select book or chapter or both and navigate back 
   updateSelectedChapter = (chapter, index) => {
@@ -56,27 +56,29 @@ class ReferenceSelection extends Component {
       selectedChapterIndex: index != null && index,
     }, () => {
       //call back fucntion to update perticular values on back 
-      this.props.navigation.state.params.getReference({
-        bookId: this.state.selectedBookId,
-        bookName: this.state.selectedBookName,
-        chapterNumber: chapterNum > this.state.totalChapters ? '1' : chapterNum,
-        totalChapters: this.state.totalChapters,
-      })
+        this.props.navigation.state.params.getReference({
+          bookId:  this.state.selectedBookId,
+          bookName:  this.state.selectedBookName,
+          chapterNumber: chapterNum > this.state.totalChapters ? '1' : chapterNum,
+          totalChapters: this.state.totalChapters,
+        })
       this.props.navigation.goBack()
     })
   }
   // all books to render
-  getBooks(){
-    if(this.props.navigation.state.params){
+  getBooks() {
+    if (this.props.navigation.state.params) {
       let params = this.props.navigation.state.params
-      this.props.fetchVersionBooks({ language: params.language, versionCode: params.versionCode, 
-        downloaded: params.downloaded, sourceId: params.sourceId })
+      this.props.fetchVersionBooks({
+        language: params.language, versionCode: params.versionCode,
+        downloaded: params.downloaded, sourceId: params.sourceId
+      })
     }
   }
   componentDidMount() {
-   this.getBooks()
+    this.getBooks()
   }
-  
+
   errorMessage() {
     if (!this.alertPresent) {
       this.alertPresent = true;
@@ -87,7 +89,7 @@ class ReferenceSelection extends Component {
       }
     }
   }
-// if error message or fetch data not available re-render
+  // if error message or fetch data not available re-render
   reloadBooks = () => {
     this.errorMessage()
     this.getBooks()
@@ -101,10 +103,11 @@ class ReferenceSelection extends Component {
           textContent={'Loading...'}
         /> : (
           this.props.error ?
-            <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
+            <View style={this.styles.mainContainerReloadButton}>
               <ReloadButton
                 styles={this.styles}
                 reloadFunction={this.reloadBooks}
+                message={null}
               />
             </View>
             :

@@ -90,7 +90,7 @@ export const styles = (colorFile, sizeFile) => {
             bottom: 36,
             left: 4
         },
-       
+
         bottomBarNextParallelView: {
             position: 'absolute',
             backgroundColor: colorFile.semiTransparentBackground,
@@ -101,7 +101,7 @@ export const styles = (colorFile, sizeFile) => {
             bottom: 36,
             right: 4
         },
-        bottomBarPosition:{
+        bottomBarPosition: {
             position: 'absolute',
             backgroundColor: colorFile.semiTransparentBackground,
             justifyContent: 'center',
@@ -110,18 +110,18 @@ export const styles = (colorFile, sizeFile) => {
             borderRadius: 32,
             margin: 8,
         },
-        showBottomBar:{
-            bottom:60
+        showBottomBar: {
+            bottom: 60
         },
-        hideBottomBar:{
-            bottom:20
+        hideBottomBar: {
+            bottom: 20
         },
         bottomBarPrevView: {
             left: 0
         },
         bottomBarNextView: {
             right: 0
-           
+
         },
         audiocontainer: {
             flexDirection: 'row',
@@ -183,7 +183,7 @@ export const styles = (colorFile, sizeFile) => {
             textDecorationLine: 'underline',
             lineHeight: sizeFile.lineHeight
         },
-        textHighlight:{
+        textHighlight: {
             lineHeight: sizeFile.lineHeight
         },
         textStyle: {
@@ -201,7 +201,7 @@ export const styles = (colorFile, sizeFile) => {
             justifyContent: 'center',
             alignItems: 'center',
         },
-      
+
         footerText: {
             fontWeight: 'bold'
         },
@@ -237,6 +237,13 @@ export const styles = (colorFile, sizeFile) => {
             justifyContent: 'center',
             alignItems: 'center',
             height: '100%'
-        }
+        },
+
+        reloadText: {
+            fontSize: sizeFile.contentText,
+            color: colorFile.textColor,
+            textAlign: 'center'
+        },
+
     })
 }

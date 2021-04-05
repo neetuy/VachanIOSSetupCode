@@ -152,10 +152,9 @@ class History extends Component {
           this.state.isLoading ? <ActivityIndicator animate={true} /> :
             data.list.map((item, index) =>
               <TouchableOpacity onPress={() => { this.goToContent(item) }}>
-                <Text style={this.styles.contentText}> {item.languageName} : {item.bookName} : {item.chapterNumber} </Text>
+                <Text style={this.styles.contentText}> {item.languageName} {item.versionCode} {item.bookName} {item.chapterNumber} </Text>
               </TouchableOpacity>
             )
-
         }
 
       </View>
@@ -177,6 +176,7 @@ class History extends Component {
             :
             <Accordion
               dataArray={this.state.historyList}
+              // expanded={true}
               expanded={[0]}
               renderHeader={this._renderHeader}
               renderContent={this._renderContent}

@@ -23,6 +23,17 @@ export const styles =(colorFile, sizeFile) =>{
         indicatorStyle:{
             backgroundColor: colorFile.blueText,
         },
+        mainContainerReloadButton:{
+            flex:1,
+            backgroundColor: colorFile.backgroundColor,
+            justifyContent:'center',
+            alignItems:'center'
+        },
+        reloadText: {
+            fontSize: sizeFile.contentText,
+            color: colorFile.textColor,
+            textAlign: 'center'
+        },
 
     })
     

@@ -158,7 +158,6 @@ class DbHelper {
 
 	async addLangaugeList(languages, books) {
 		let realm = await this.getRealm()
-
 		if (realm) {
 			for (var i = 0; i < languages.length; i++) {
 				for (var j = 0; j < books.length; j++) {

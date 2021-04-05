@@ -68,7 +68,11 @@ export const styles =(colorFile, sizeFile) =>{
             backgroundColor:Color.Blue_Color,
             justifyContent:'center',alignItems:'center'
           },
-        reloadText:{fontSize:18,color:Color.White,textAlign:'center'},
+        reloadText: {
+            fontSize: sizeFile.contentText,
+            color: colorFile.textColor,
+            textAlign: 'center'
+        },
         emptyMessageIcon:{
             fontSize:sizeFile.emptyIconSize,
             margin:16,

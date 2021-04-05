@@ -7,11 +7,11 @@ import {
   downloadedBookSuccess, downloadedBookFailure
 } from '../../action/'
 import { getBookSectionFromMapping, getBookChaptersFromMapping } from '../../../utils/UtilFunctions';
-
 import { put, takeLatest, call } from 'redux-saga/effects'
 import fetchApi from '../../api';
 import DbQueries from '../../../utils/dbQueries'
 import store from '../../../store'
+import { Alert,BackHandler } from 'react-native';
 
 function* fetchVersionLanguage() {
   try {
@@ -53,6 +53,7 @@ function* fetchVersionBooks(params) {
     else {
       var result = yield call(fetch, state.updateVersion.baseAPI + 'booknames')
       if (result.ok && result.status == 200) {
+        let found = false
         const response = yield result.json()
         for (var i = 0; i < response.length; i++) {
           if (payload.language.toLowerCase() == response[i].language.name) {
@@ -66,8 +67,14 @@ function* fetchVersionBooks(params) {
               }
               bookListData.push(books)
             }
+            found = true
           }
         }
+        if(!found){
+          //can exit app to refresh the data or give alert
+        Alert.alert("Check for update in languageList screen", [{ text: 'OK', onPress: () => {return} }], { cancelable: false });
+        // BackHandler.exitApp();
+      }
       }
     }
     var res = bookListData.length == 0 ? [] : bookListData.sort(function (a, b) { return a.bookNumber - b.bookNumber })

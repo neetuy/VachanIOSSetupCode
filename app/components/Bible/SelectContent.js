@@ -79,6 +79,7 @@ class SelectContent extends Component {
       <Accordion
         dataArray={item.content}
         animation={true}
+        // expanded={true}
         expanded={[0]}
         renderHeader={this._renderHeaderInner}
         renderContent={this._renderContentInner}
@@ -131,6 +132,7 @@ class SelectContent extends Component {
                   <Accordion
                     dataArray={this.props.availableContents}
                     animation={true}
+                    // expanded={true}
                     expanded={[0]}
                     renderHeader={this._renderHeader}
                     renderContent={this._renderContent}

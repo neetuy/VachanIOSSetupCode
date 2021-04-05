@@ -8,8 +8,6 @@ import { numberSelection } from './styles.js';
 import { connect } from 'react-redux'
 import Icon from 'react-native-vector-icons/MaterialIcons'
 
-
-
 class ChapterSelection extends Component {
 
   constructor(props) {
@@ -35,7 +33,7 @@ class ChapterSelection extends Component {
           numbers={this.state.chapterData}
           heighlightedNumber={this.props.screenProps.selectedChapterNumber}
         />
-        <Icon name="check-circle" color='rgba(62, 64, 149, 0.8)' onPress={() => this.props.screenProps.updateSelectedChapter(this.props.screenProps.selectedChapterNumber, this.props.screenProps.selectedChapterIndex)} size={64} style={{ position: 'absolute', bottom: 0, right: 0, padding: 20 }} />
+        <Icon name="check-circle" color='rgba(62, 64, 149, 0.8)' onPress={() => this.props.screenProps.updateSelectedChapter(this.props.screenProps.selectedChapterNumber, this.props.screenProps.selectedChapterIndex)} size={64} style={{ position: 'absolute', bottom: 0, right: 0, paddingRight: 20,paddingBottom:10 }} />
       </View>
 
     )

@@ -1,16 +1,18 @@
-import React, { Component, Fragment } from 'react';
-import { ActivityIndicator, View, KeyboardAvoidingView, Platform, Text, Alert, TextInput, Button, Image ,StatusBar,SafeAreaView} from 'react-native';
+import React, { Component,Fragment } from 'react';
+import { ActivityIndicator, View, KeyboardAvoidingView, Platform, Text, Alert, TextInput, Button, Image,SafeAreaView,StatusBar } from 'react-native';
 import firebase from 'react-native-firebase'
 import { userInfo } from '../../store/action'
 import { connect } from 'react-redux'
 import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
-import { GoogleSignin, GoogleSigninButton } from 'react-native-google-signin';
-// import { AccessToken, LoginManager, LoginButton } from 'react-native-fbsdk';
+import { GoogleSignin, GoogleSigninButton,statusCodes, } from 'react-native-google-signin';
+import { AccessToken, LoginManager, LoginButton } from 'react-native-fbsdk';
 import { styles } from './styles.js'
 import Color from '../../utils/colorConstants'
 
 class Login extends Component {
-
+  static navigationOptions = {
+    header: null,
+  };
   constructor(props) {
     super(props)
     this.state = {
@@ -63,28 +65,35 @@ class Login extends Component {
     }
   }
 
-  _signInGoogle = () => {
-    GoogleSignin.signIn()
-      .then((data) => {
-        this.setState({ isLoading: true }, () => {
+  _signInGoogle = async() => {
+    try{
+      await GoogleSignin.hasPlayServices();
+      const data = await GoogleSignin.signIn();
+      if(data){
+        this.setState({ isLoading: true }, async() => {
           const credential = firebase.auth.GoogleAuthProvider.credential(data.idToken, data.accessToken);
           // Login with the credential
-          return firebase.auth().signInWithCredential(credential);
+          await firebase.auth().signInWithCredential(credential);
+            this.setState({ isLoading: false })
+            this.props.navigation.navigate("Bible")
         })
-        // Create a new Firebase credential with the token
-
-      })
-      .then((res) => {
-        this.setState({ isLoading: true }, () => {
-          this.setState({ isLoading: false })
-          this.props.navigation.navigate("Bible")
-        })
-        // If you need to do anything with the user, do it here
-        // The user will be logged in automatically by the
-        // `onAuthStateChanged` listener we set up in BIble.js earlier
-      })
-      .catch((error) => {
-      });
+      }
+    }catch(error){
+      if (error.code === statusCodes.SIGN_IN_CANCELLED) {
+        // user cancelled the login flow
+        Alert.alert('Signin Cancelled');
+      } else if (error.code === statusCodes.IN_PROGRESS) {
+        Alert.alert('Signin in progress');
+        // operation (f.e. sign in) is in progress already
+      } else if (error.code === statusCodes.PLAY_SERVICES_NOT_AVAILABLE) {
+        Alert.alert('Google play services not available');
+        // play services not available or outdated
+      } else {
+        // some other error happened
+      }
+      console.log(" SIGN IN ERROR",error)
+    }
+  
   }
 
   _signInFacebook = () => {
@@ -112,17 +121,6 @@ class Login extends Component {
         const { code, message } = error;
       });
   }
-  componentDidMount() {
-    GoogleSignin.configure({
-      webClientId: '200568144927-t9a6k9qcthipq76c0j3ee5tdpvf823k0.apps.googleusercontent.com', // client ID of type WEB for your server (needed to verify user ID and offline access)
-      // offlineAccess: true, // if you want to access Google API on behalf of the user FROM YOUR SERVER
-      // hostedDomain: 'localhost', // specifies a hosted domain restriction
-      // loginHint: '', // [iOS] The user's ID, or email address, to be prefilled in the authentication UI if possible. [See docs here](https://developers.google.com/identity/sign-in/ios/api/interface_g_i_d_sign_in.html#a0a68c7504c31ab0b728432565f6e33fd)
-      forceConsentPrompt: true, // [Android] if you want to show the authorization prompt at each login.
-      // accountName: '', // [Android] specifies an account name on the device that should be used
-      // iosClientId: '<FROM DEVELOPER CONSOLE>', // [iOS] optional, if you want to specify the client ID of type iOS (otherwise, it is taken from GoogleService-Info.plist)
-    });
-  }
   render() {
     if (this.state.isLoading) {
       return (
@@ -139,8 +137,6 @@ class Login extends Component {
         behavior={Platform.OS == "ios" ? "padding" : "height"}
         style={this.styles.container}
       >
-        {/* <View> */}
-        {/* </View> */}
         <View style={{ padding: 35, flex: 1 }}>
         <Icon name='close' size={28} style={this.styles.headerCloseIcon} onPress={()=>this.props.navigation.pop()}/>
           <View style={{ alignItems: 'center', justifyContent: 'center' }}>
@@ -196,12 +192,12 @@ class Login extends Component {
               />
             </View>
             <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center', marginVertical: 32 }}>
-              <GoogleSigninButton 
-                  style={{ width: 68, height: 68 }} 
-                  size={GoogleSigninButton.Size.Icon} 
-                  color={GoogleSigninButton.Color.Dark} 
-                  onPress={this._signInGoogle} 
-               />
+              <GoogleSigninButton
+                style={{ width: 68, height: 68 }}
+                size={GoogleSigninButton.Size.Icon}
+                color={GoogleSigninButton.Color.Dark}
+                onPress={this._signInGoogle}
+              />
             </View>
             <Text
               style={this.styles.loginText}
@@ -212,7 +208,7 @@ class Login extends Component {
         </View>
       </KeyboardAvoidingView>
       </SafeAreaView>
-    </Fragment>
+      </Fragment>
     )
   }
 

@@ -23,8 +23,7 @@ class ProfilePage extends Component {
     this.styles = styles(this.props.colorFile, this.props.sizeFile);
   }
   async componentDidMount() {
-
-    firebase.auth().onAuthStateChanged((user) => {
+    await firebase.auth().onAuthStateChanged((user) => {
       if (!user) {
         return
       }
@@ -45,7 +44,7 @@ class ProfilePage extends Component {
       <View style={this.styles.container}>
         <Header style={{ backgroundColor: Color.Blue_Color }}>
           <Left>
-            <Button transparent onPress={()=>{this.props.navigation.navigate("Bible")}}>
+            <Button transparent onPress={() => this.props.navigation.navigate("Bible")}>
               <Icon size={24} color={Color.White} name='arrow-back' />
             </Button>
           </Left>

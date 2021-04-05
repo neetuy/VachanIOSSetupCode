@@ -38,6 +38,7 @@ const SelectionGrid = ({
             </View>
           </TouchableOpacity>
         }
+        ListFooterComponent={<View style={{marginBottom:84}}/>}
       />
     </View>
   )

@@ -73,6 +73,11 @@ export const styles =(colorFile, sizeFile) =>{
         fontSize: 16,
         color: colorFile.textColor,
       },
+      reloadText: {
+        fontSize: sizeFile.contentText,
+        color: colorFile.textColor,
+        textAlign: 'center'
+    },
       content: {
         paddingHorizontal:20,
         paddingVertical:10,
