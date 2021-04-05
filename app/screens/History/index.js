@@ -177,7 +177,7 @@ class History extends Component {
             :
             <Accordion
               dataArray={this.state.historyList}
-              expanded={true}
+              expanded={[0]}
               renderHeader={this._renderHeader}
               renderContent={this._renderContent}
             />

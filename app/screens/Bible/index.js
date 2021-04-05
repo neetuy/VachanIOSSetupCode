@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { Component, Fragment } from 'react';
 import {
   Text,
   View,
@@ -35,6 +35,7 @@ import BibleChapter from '../../components/Bible/BibleChapter';
 import firebase from 'react-native-firebase';
 import vApi from '../../utils/APIFetch';
 import HighlightColorGrid from '../../components/Bible/HighlightColorGrid';
+import { color } from 'react-native-reanimated';
 
 const AnimatedFlatlist = Animated.createAnimatedComponent(FlatList);
 const width = Dimensions.get('window').width;
@@ -940,15 +941,18 @@ class Bible extends Component {
   }
   render() {
     return (
-      // <SafeAreaView style={{ flex: 1 }}>
+      <Fragment>
+      <SafeAreaView style={{ flex: 0,backgroundColor:Color.Blue_Color }}/>
+      <SafeAreaView style={{ flex: 1, backgroundColor:Color.White }} >
+      <StatusBar barStyle="light-content" />
+
       <View style={this.styles.container}>
-        {/* <StatusBar barStyle = "dark-content" hidden = {false} backgroundColor = "#00BCD4" translucent = {true}/> */}
         {
           this.props.visibleParallelView ?
             <View style={{ position: 'absolute', top: 0, zIndex: 2, width: '50%' }}>
               <Header style={{ backgroundColor: Color.Blue_Color, height: 40 }}>
                 <Button transparent onPress={() => this.navigateToSelectionTab(true)}>
-                  <Title style={{ fontSize: 16 }}>{this.props.bookName.length > 10 ? this.props.bookName.slice(0, 9) + "..." : this.props.bookName} {this.state.currentVisibleChapter}</Title>
+                  <Title style={{ fontSize: 16,color:Color.White }}>{this.props.bookName.length > 10 ? this.props.bookName.slice(0, 9) + "..." : this.props.bookName} {this.state.currentVisibleChapter}</Title>
                   <Icon name="arrow-drop-down" color={Color.White} size={20} />
                 </Button>
               </Header>
@@ -1094,7 +1098,8 @@ class Bible extends Component {
             )}
         </View>
       </View>
-      // </SafeAreaView>
+      </SafeAreaView>
+      </Fragment>
     )
   }
 }

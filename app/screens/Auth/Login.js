@@ -1,5 +1,5 @@
-import React, { Component } from 'react';
-import { ActivityIndicator, View, KeyboardAvoidingView, Platform, Text, Alert, TextInput, Button, Image } from 'react-native';
+import React, { Component, Fragment } from 'react';
+import { ActivityIndicator, View, KeyboardAvoidingView, Platform, Text, Alert, TextInput, Button, Image ,StatusBar,SafeAreaView} from 'react-native';
 import firebase from 'react-native-firebase'
 import { userInfo } from '../../store/action'
 import { connect } from 'react-redux'
@@ -10,9 +10,7 @@ import { styles } from './styles.js'
 import Color from '../../utils/colorConstants'
 
 class Login extends Component {
-  static navigationOptions = {
-    header: null,
-  };
+
   constructor(props) {
     super(props)
     this.state = {
@@ -65,29 +63,29 @@ class Login extends Component {
     }
   }
 
-  // _signInGoogle = () => {
-  //   GoogleSignin.signIn()
-  //     .then((data) => {
-  //       this.setState({ isLoading: true }, () => {
-  //         const credential = firebase.auth.GoogleAuthProvider.credential(data.idToken, data.accessToken);
-  //         // Login with the credential
-  //         return firebase.auth().signInWithCredential(credential);
-  //       })
-  //       // Create a new Firebase credential with the token
+  _signInGoogle = () => {
+    GoogleSignin.signIn()
+      .then((data) => {
+        this.setState({ isLoading: true }, () => {
+          const credential = firebase.auth.GoogleAuthProvider.credential(data.idToken, data.accessToken);
+          // Login with the credential
+          return firebase.auth().signInWithCredential(credential);
+        })
+        // Create a new Firebase credential with the token
 
-  //     })
-  //     .then((res) => {
-  //       this.setState({ isLoading: true }, () => {
-  //         this.setState({ isLoading: false })
-  //         this.props.navigation.navigate("Bible")
-  //       })
-  //       // If you need to do anything with the user, do it here
-  //       // The user will be logged in automatically by the
-  //       // `onAuthStateChanged` listener we set up in BIble.js earlier
-  //     })
-  //     .catch((error) => {
-  //     });
-  // }
+      })
+      .then((res) => {
+        this.setState({ isLoading: true }, () => {
+          this.setState({ isLoading: false })
+          this.props.navigation.navigate("Bible")
+        })
+        // If you need to do anything with the user, do it here
+        // The user will be logged in automatically by the
+        // `onAuthStateChanged` listener we set up in BIble.js earlier
+      })
+      .catch((error) => {
+      });
+  }
 
   _signInFacebook = () => {
     LoginManager.logInWithPermissions(['public_profile', 'email'])
@@ -134,14 +132,17 @@ class Login extends Component {
       )
     }
     return (
+      <Fragment>
+      <SafeAreaView style={{ flex: 1, backgroundColor:Color.White }} >
+      <StatusBar barStyle="light-content" />
       <KeyboardAvoidingView
         behavior={Platform.OS == "ios" ? "padding" : "height"}
         style={this.styles.container}
       >
-        <View>
-          <Icon name='close' size={28} style={this.styles.headerCloseIcon} onPress={()=>this.props.navigation.pop()}/>
-        </View>
+        {/* <View> */}
+        {/* </View> */}
         <View style={{ padding: 35, flex: 1 }}>
+        <Icon name='close' size={28} style={this.styles.headerCloseIcon} onPress={()=>this.props.navigation.pop()}/>
           <View style={{ alignItems: 'center', justifyContent: 'center' }}>
             <Image
               style={{ width: 50, height: 50, marginVertical: 16 }}
@@ -195,12 +196,12 @@ class Login extends Component {
               />
             </View>
             <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center', marginVertical: 32 }}>
-              <GoogleSigninButton
-                style={{ width: 68, height: 68 }}
-                size={GoogleSigninButton.Size.Icon}
-                color={GoogleSigninButton.Color.Dark}
-                onPress={this._signInGoogle}
-              />
+              <GoogleSigninButton 
+                  style={{ width: 68, height: 68 }} 
+                  size={GoogleSigninButton.Size.Icon} 
+                  color={GoogleSigninButton.Color.Dark} 
+                  onPress={this._signInGoogle} 
+               />
             </View>
             <Text
               style={this.styles.loginText}
@@ -210,6 +211,8 @@ class Login extends Component {
           </View>
         </View>
       </KeyboardAvoidingView>
+      </SafeAreaView>
+    </Fragment>
     )
   }
 

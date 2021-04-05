@@ -1,0 +1,6 @@
+framework module Pods_VachanGo_tvOSTests {
+  umbrella header "Pods-VachanGo-tvOSTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

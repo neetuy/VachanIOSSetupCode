@@ -1,0 +1,28 @@
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '9.0'
+
+target 'VachanGo' do
+  # Comment the next line if you don't want to use dynamic frameworks
+  use_frameworks!
+  pod 'GoogleSignIn', '~> 5.0.2'
+  # Pods for VachanGo
+
+  target 'VachanGo-tvOSTests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+  target 'VachanGoTests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+end
+
+target 'VachanGo-tvOS' do
+  # Comment the next line if you don't want to use dynamic frameworks
+  use_frameworks!
+
+  # Pods for VachanGo-tvOS
+
+end

@@ -143,7 +143,7 @@ class BibleChapter extends Component {
             <View style={this.styles.container}>
                 <Header style={{ backgroundColor: Color.Blue_Color, height: 40, borderLeftWidth: 0.2, borderLeftColor: Color.White }}>
                     <Button transparent onPress={this.goToSelectionTab}>
-                        <Title style={{ fontSize: 16 }}>{this.state.shortbookName} {this.state.currentParallelViewChapter}</Title>
+                        <Title style={{ fontSize: 16,color:Color.White }}>{this.state.shortbookName} {this.state.currentParallelViewChapter}</Title>
                         <Icon name="arrow-drop-down" color={Color.White} size={20} />
                     </Button>
                     <Right>

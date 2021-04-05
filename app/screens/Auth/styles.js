@@ -162,6 +162,7 @@ export const styles = (colorFile, sizeFile) => {
     },
     headerCloseIcon: {
       position: 'absolute',
+      zIndex:1,
       left: 0,
       top: 0,
       margin: 12,

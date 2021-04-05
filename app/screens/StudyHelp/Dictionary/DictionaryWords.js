@@ -124,7 +124,7 @@ class DictionaryWords extends Component {
               <Accordion
                 dataArray={this.props.dictionaryContent}
                 animation={true}
-                expanded={true}
+                expanded={[0]}
                 renderHeader={this._renderHeader}
                 renderContent={this._renderContent}
               />

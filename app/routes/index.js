@@ -14,7 +14,6 @@ import DictionaryWords from '../screens/StudyHelp/Dictionary/DictionaryWords'
 import Infographics from '../screens/StudyHelp/InfoGraphics/';
 import InfographicsImage from '../screens/StudyHelp/InfoGraphics/infographicsImage';
 
-
 import Reset from '../screens/Auth/Reset'
 import Register from '../screens/Auth/Register'
 import Login from '../screens/Auth/Login'
@@ -100,8 +99,6 @@ const NavStack = createStackNavigator(
       }),
     },
 
-
-
   },
   {
     defaultNavigationOptions: {
@@ -114,30 +111,31 @@ const NavStack = createStackNavigator(
       headerTitleStyle: {
         fontWeight: 'bold',
         color: Color.White
-      }
+      },
+      headerBackTitle:null,
+      headerMode: 'none'
+
     },
 
   }
 )
 
 const DrawerNavigate = createDrawerNavigator({
-
-  StackNavigate: {
+  NavStack: {
     screen: NavStack
   },
-
 },
   {
     contentComponent: DrawerScreen,
     drawerWidth: 250,
-    overlayColor: 'rgba(52, 52, 52, 0.8)'
+    overlayColor: 'rgba(52, 52, 52, 0.8)',
   },
 );
 
-const SwitchNavigator = createSwitchNavigator({
-  DrawerNavigate: DrawerNavigate
-});
+// const SwitchNavigator = createSwitchNavigator({
+//   DrawerNavigate: DrawerNavigate
+// });
 
-export const AppNavigator = createAppContainer(SwitchNavigator);
+export const AppNavigator = createAppContainer(DrawerNavigate);
 
 

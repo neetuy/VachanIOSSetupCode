@@ -96,6 +96,7 @@ export default class CustomHeader extends Component {
           </TouchableOpacity>
         </View>
         <Animated.View style={[navStyles.title]}>
+          {/* <View style={navStyles.headerTitle}> */}
           <TouchableOpacity  style={navStyles.titleTouchable}  onPress={this.props.navigateToSelectionTab}>
             <Text style={{ fontSize: 18,color:'#fff' }}>{this.props.bookName.length > 16 ? this.props.bookName.slice(0, 15) + "..." : this.props.bookName} {this.props.chapterNumber}</Text>
             <Icon name="arrow-drop-down" color={Color.White} size={20} />
@@ -104,6 +105,7 @@ export default class CustomHeader extends Component {
             <Text style={{ fontSize: 18,color:'#fff'}}>{this.props.language && this.props.language.charAt(0).toUpperCase() + this.props.language.slice(1)} {this.props.versionCode && this.props.versionCode.toUpperCase()}</Text>
             <Icon name="arrow-drop-down" color={Color.White} size={20} />
           </TouchableOpacity>
+          {/* </View> */}
         </Animated.View>
       </Animated.View>
     )
@@ -130,7 +132,7 @@ const navStyles = StyleSheet.create({
   title: {
     color: '#333333',
     flexDirection:'row',
-    height: 32,
+    height: 40,
     // top:0,
     justifyContent: 'center',
     alignItems:'center',
@@ -138,7 +140,10 @@ const navStyles = StyleSheet.create({
     zIndex: 0,
     width: '100%'
   },
-
+  headerTitle:{
+    paddingVertical:8,
+    flex:1
+  },
   border: {
     paddingHorizontal: 4,
     paddingVertical: 4,

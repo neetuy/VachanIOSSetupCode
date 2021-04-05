@@ -1,0 +1,6 @@
+framework module Pods_VachanGoTests {
+  umbrella header "Pods-VachanGoTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

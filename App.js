@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
-import { AppNavigator } from './app/routes/';
+import  {AppNavigator} from './app/routes/';
 import SplashScreen from 'react-native-splash-screen';
 import { connect } from 'react-redux'
 import { Root } from "native-base";
 import VersionCheck from 'react-native-version-check';
 import { fetchAllContent, fetchVersionLanguage, APIBaseURL, updateVersion } from './app/store/action/';
-import { Alert, BackHandler, Linking,SafeAreaView } from 'react-native';
+import { Alert, BackHandler, Linking,SafeAreaView,Platform,StatusBar } from 'react-native';
 import firebase from 'react-native-firebase'
 
 class App extends Component {
@@ -48,6 +48,10 @@ class App extends Component {
 
 
   async componentDidMount() {
+    // this._navListener = this.props.navigation.addListener('didFocus', () => {
+    //   StatusBar.setBarStyle('light-content');
+    //    StatusBar.setBackgroundColor('#6a51ae');
+    // });
     setTimeout(() => {
       SplashScreen.hide()
     }, 400)
@@ -74,11 +78,15 @@ class App extends Component {
 
   render() {
     return (
-      <SafeAreaView style={{ flex: 1 }}>
+      // <SafeAreaView style={{ flex: 1,paddingTop: Platform.OS === "android" ? StatusBar.currentHeight : 0 }}>
+      //     <StatusBar
+      //       barStyle="dark-content"
+      //       backgroundColor="#ecf0f1"
+      //     />
       <Root>
         <AppNavigator />
       </Root>
-      </SafeAreaView>
+      // </SafeAreaView>
     )
 
   }

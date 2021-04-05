@@ -272,7 +272,7 @@ componentWillUnmount(){
               dataArray={this.state.languages}
               animation={true}
               // expanded={true}
-              expanded={[]}
+              expanded={[0]}
               renderHeader={this._renderHeader}
               renderContent={this._renderContent}
             />

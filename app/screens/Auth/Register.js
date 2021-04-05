@@ -1,6 +1,6 @@
 
-import React, { Component } from 'react';
-import { ActivityIndicator, View, Text, TextInput, Image, Button, Alert, Platform, KeyboardAvoidingView } from 'react-native';
+import React, { Component, Fragment } from 'react';
+import { ActivityIndicator, View, Text, TextInput, Image, Button, Alert, Platform, KeyboardAvoidingView, SafeAreaView,StatusBar } from 'react-native';
 import firebase from 'react-native-firebase'
 import { userInfo } from '../../store/action/'
 import { connect } from 'react-redux'
@@ -76,13 +76,15 @@ class Register extends Component {
       )
     }
     return (
+      <Fragment>
+    <SafeAreaView style={{ flex: 1, backgroundColor:Color.White }} >
+    <StatusBar barStyle="light-content" />
       <KeyboardAvoidingView
         behavior={Platform.OS == "ios" ? "padding" : "height"}
         style={this.styles.container} >
-        <View>
-          <Icon name='close' size={28} style={this.styles.headerCloseIcon} onPress={()=>this.props.navigation.pop()} />
-        </View>
+
         <View style={{ padding: 35, flex: 1 }}>
+        <Icon name='close' size={28} style={this.styles.headerCloseIcon} onPress={()=>this.props.navigation.pop()} />
           <View style={{ alignItems: 'center', justifyContent: 'center' }}>
             <Image
               style={{ width: 50, height: 50, marginVertical: 16 }}
@@ -145,6 +147,8 @@ class Register extends Component {
           </View>
         </View>
       </KeyboardAvoidingView>
+      </SafeAreaView>
+      </Fragment>
     );
   }
 

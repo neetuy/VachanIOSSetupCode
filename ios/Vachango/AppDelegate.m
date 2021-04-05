@@ -10,11 +10,14 @@
 #import <React/RCTRootView.h>
 #import "RNSplashScreen.h"  // here
 #import <Firebase.h>
-#import "RNGoogleSignin.h"
+// #import <RNGoogleSignin/RNGoogleSignin.h>
 @implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+//  NSString *filePath = [[NSBundle mainBundle] pathForResource:@"GoogleService-Info" ofType:@"plist"];
+//   NSDictionary *plistDict = [NSDictionary dictionaryWithContentsOfFile:filePath];
+//   [GIDSignIn sharedInstance].clientID = [plistDict objectForKey:@"CLIENT_ID"];
    [FIRApp configure];
   RCTBridge *bridge = [[RCTBridge alloc] initWithDelegate:self launchOptions:launchOptions];
   RCTRootView *rootView = [[RCTRootView alloc] initWithBridge:bridge
@@ -29,6 +32,11 @@
   self.window.rootViewController = rootViewController;
   [self.window makeKeyAndVisible];
   // [RNSplashScreen show];  // here
+//  if ([[GIDSignIn sharedInstance] handleURL:url
+//                           sourceApplication:sourceApplication
+//                                  annotation:annotation]) {
+//     return YES;
+//   }
   return YES;
   // return [[FBSDKApplicationDelegate sharedInstance] application:application openURL:url options:options] || [RNGoogleSignin application:application openURL:url options:options];
 
