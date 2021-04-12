@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { Component,Fragment } from 'react';
 import {
   Text,
   View,
@@ -11,7 +11,9 @@ import {
   AppState,
   Animated,
   NetInfo,
-  TouchableOpacity
+  TouchableOpacity,
+  StatusBar,
+  SafeAreaView
 } from 'react-native';
 import Icon from 'react-native-vector-icons/MaterialIcons';
 import { createResponder } from 'react-native-gesture-responder';
@@ -934,13 +936,17 @@ class Bible extends Component {
   render() {
     this.styles = styles(this.props.colorFile, this.props.sizeFile);
     return (
+      <Fragment>
+      <SafeAreaView style={{ flex: 0, backgroundColor:Color.Blue_Color }} />
+      <SafeAreaView style={{ flex: 1, backgroundColor:Color.White }} >
+      <StatusBar barStyle="light-content" />
       <View style={this.styles.container}>
         {
           this.props.visibleParallelView ?
             <View style={{ position: 'absolute', top: 0, zIndex: 2, width: '50%' }}>
               <Header style={{ backgroundColor: Color.Blue_Color, height: 40 }}>
                 <Button transparent onPress={() => this.navigateToSelectionTab(true)}>
-                  <Title style={{ fontSize: 16 }}>{this.props.bookName.length > 10 ? this.props.bookName.slice(0, 9) + "..." : this.props.bookName} {this.state.currentVisibleChapter}</Title>
+                  <Title style={{ fontSize: 16,color:Color.White }}>{this.props.bookName.length > 10 ? this.props.bookName.slice(0, 9) + "..." : this.props.bookName} {this.state.currentVisibleChapter}</Title>
                   <Icon name="arrow-drop-down" color={Color.White} size={20} />
                 </Button>
               </Header>
@@ -1087,6 +1093,8 @@ class Bible extends Component {
             )}
         </View>
       </View>
+      </SafeAreaView>
+      </Fragment>
     )
   }
 }

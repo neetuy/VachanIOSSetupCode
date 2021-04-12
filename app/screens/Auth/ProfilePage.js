@@ -46,11 +46,12 @@ class ProfilePage extends Component {
           <Left>
             <Button transparent onPress={() => this.props.navigation.navigate("Bible")}>
               <Icon size={24} color={Color.White} name='arrow-back' />
+              <Title style={{color:Color.White}}>Profile</Title>
             </Button>
           </Left>
-          <Body>
-            <Title>Profile</Title>
-          </Body>
+          {/* <Body> */}
+            {/* <Title style={Color.White}>Profile</Title> */}
+          {/* </Body> */}
         </Header>
         <View style={this.styles.cardBgColor}>
           <Card style={this.styles.cardStyling}>

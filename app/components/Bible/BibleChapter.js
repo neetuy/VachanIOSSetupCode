@@ -4,6 +4,7 @@ import {
     View,
     ScrollView,
     Alert,
+    StatusBar
 } from 'react-native';
 import Icon from 'react-native-vector-icons/MaterialIcons'
 import Spinner from 'react-native-loading-spinner-overlay';
@@ -174,7 +175,7 @@ class BibleChapter extends Component {
             <View style={this.styles.container}>
                 <Header style={{ backgroundColor: Color.Blue_Color, height: 40, borderLeftWidth: 0.2, borderLeftColor: Color.White }}>
                     <Button transparent onPress={this.goToSelectionTab}>
-                        {this.state.shortbookName ? <Title style={{ fontSize: 16 }}>{this.state.shortbookName} {this.state.currentParallelViewChapter} </Title> : null}
+                        {this.state.shortbookName ? <Title style={{ fontSize: 16,color:Color.White }}>{this.state.shortbookName} {this.state.currentParallelViewChapter} </Title> : null}
                         <Icon name="arrow-drop-down" color={Color.White} size={20} />
                     </Button>
                     <Right style={{ position: 'absolute', right: 4 }}>

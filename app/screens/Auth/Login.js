@@ -5,7 +5,7 @@ import { userInfo } from '../../store/action'
 import { connect } from 'react-redux'
 import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
 import { GoogleSignin, GoogleSigninButton,statusCodes, } from 'react-native-google-signin';
-import { AccessToken, LoginManager, LoginButton } from 'react-native-fbsdk';
+// import { AccessToken, LoginManager, LoginButton } from 'react-native-fbsdk';
 import { styles } from './styles.js'
 import Color from '../../utils/colorConstants'
 
@@ -96,31 +96,31 @@ class Login extends Component {
   
   }
 
-  _signInFacebook = () => {
-    LoginManager.logInWithPermissions(['public_profile', 'email'])
-      .then((result) => {
-        if (result.isCancelled) {
-          return Promise.reject(new Error('The user cancelled the request'));
-        }
-        // Retrieve the access token
-        return AccessToken.getCurrentAccessToken();
-      })
-      .then((data) => {
-        const credential = firebase.auth.FacebookAuthProvider.credential(data.accessToken);
-        // Login with the credential
-        return firebase.auth().signInWithCredential(credential);
-      })
-      .then((res) => {
-        this.setState({ isLoading: true }, () => {
-          this.setState({ isLoading: false })
-          this.props.navigation.navigate("Bible")
-        })
+  // _signInFacebook = () => {
+  //   LoginManager.logInWithPermissions(['public_profile', 'email'])
+  //     .then((result) => {
+  //       if (result.isCancelled) {
+  //         return Promise.reject(new Error('The user cancelled the request'));
+  //       }
+  //       // Retrieve the access token
+  //       return AccessToken.getCurrentAccessToken();
+  //     })
+  //     .then((data) => {
+  //       const credential = firebase.auth.FacebookAuthProvider.credential(data.accessToken);
+  //       // Login with the credential
+  //       return firebase.auth().signInWithCredential(credential);
+  //     })
+  //     .then((res) => {
+  //       this.setState({ isLoading: true }, () => {
+  //         this.setState({ isLoading: false })
+  //         this.props.navigation.navigate("Bible")
+  //       })
 
-      })
-      .catch((error) => {
-        const { code, message } = error;
-      });
-  }
+  //     })
+  //     .catch((error) => {
+  //       const { code, message } = error;
+  //     });
+  // }
   render() {
     if (this.state.isLoading) {
       return (

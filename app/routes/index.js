@@ -116,6 +116,9 @@ const NavStack = createStackNavigator(
         color: Color.White
       }
     },
+    headerBackTitleVisible:false,
+    // headerBackTitle:null,
+    // headerMode:'none'
 
   }
 )

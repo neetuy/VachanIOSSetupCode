@@ -125,7 +125,7 @@ class Commentary extends Component {
       <View style={this.styles.container}>
         <Header style={{ backgroundColor: Color.Blue_Color, height: 40, borderLeftWidth: 0.5, borderLeftColor: Color.White }} >
           <Body>
-            <Title style={{ fontSize: 16 }}>{this.props.parallelLanguage && this.props.parallelLanguage.versionCode}</Title>
+            <Title style={{ fontSize: 16,color:Color.White }}>{this.props.parallelLanguage && this.props.parallelLanguage.versionCode}</Title>
           </Body>
           <Right>
             <Button transparent onPress={() => this.props.toggleParallelView(false)}>

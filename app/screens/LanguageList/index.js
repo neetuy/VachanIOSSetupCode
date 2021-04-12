@@ -17,9 +17,9 @@ import Color from '../../utils/colorConstants'
 
 class LanguageList extends Component {
   static navigationOptions = ({ navigation }) => ({
+    // headerVisible:navigation.state.params.showHeaderbackButton,
     headerTitle: 'Languages',
-    headerLeft: (<HeaderBackButton tintColor={Color.White} onPress={() => navigation.state.params.handleBack()} />),
-
+    headerLeft: (navigation.state.params.showHeaderbackButton ? <HeaderBackButton tintColor={Color.White} onPress={() => navigation.state.params.handleBack()} /> : null)
   });
   constructor(props) {
     super(props)
@@ -34,7 +34,6 @@ class LanguageList extends Component {
       downloaded: this.props.downloaded,
       sourceId: this.props.sourceId,
       updateLanguageList: false,
-
       colorFile: this.props.colorFile,
       sizeFile: this.props.sizeFile,
 
@@ -43,10 +42,10 @@ class LanguageList extends Component {
     this.alertPresent = false
   }
 
-  componentDidMount() {
-    this.props.fetchAllContent()
+  async componentDidMount() {
+    this.props.navigation.setParams({showHeaderbackButton:false})
+    await this.props.fetchAllContent()
     this.fetchLanguages()
-    this.props.navigation.setParams({ handleBack: this.onBack })
     // BackHandler.addEventListener('hardwareBackPress', this.onBack);
     this._interval = setInterval(async () => {
       await DbQueries.deleteLangaugeList()
@@ -81,7 +80,7 @@ class LanguageList extends Component {
           }
         }
       }
-      com.bridgeconn.vachangotest("updatedObj ",Object.keys(updatedObj).length,updateSourceId)
+      // com.bridgeconn.vachangotest("updatedObj ",Object.keys(updatedObj).length,updateSourceId)
       if (updateSourceId) {
         if(Object.keys(updatedObj).length>0){
           this.props.navigation.state.params.updateLangVer(updatedObj)
@@ -131,6 +130,7 @@ class LanguageList extends Component {
     }
   }
   async fetchLanguages() {
+    this.props.navigation.setParams({ handleBack: this.onBack,showHeaderbackButton:true})
     var languageList = await DbQueries.getLangaugeList()
     var lanVer = []
     let update = false

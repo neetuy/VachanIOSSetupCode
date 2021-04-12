@@ -22,7 +22,6 @@
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
 		140ED2AC1D01E1AD002B40FF /* libReact.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 146834041AC3E56700842450 /* libReact.a */; };
-		145958082E3D4E7375CA5530 /* Pods_VachanGo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ADFD304605478EEE88383640 /* Pods_VachanGo.framework */; };
 		146834051AC3E58100842450 /* libReact.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 146834041AC3E56700842450 /* libReact.a */; };
 		17B7A4980B584B0A8C3DA88D /* libRNGoogleSignin.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E33DBFA73C0F494397F4F915 /* libRNGoogleSignin.a */; };
 		2D02E4BC1E0B4A80006451C7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.m */; };
@@ -38,10 +37,12 @@
 		2D16E6881FA4F8E400B85C8A /* libReact.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D16E6891FA4F8E400B85C8A /* libReact.a */; };
 		2DCD954D1E0B4F2C00145EB5 /* VachanGoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* VachanGoTests.m */; };
 		2DF0FFEE2056DD460020B375 /* libReact.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DAD3EA31DF850E9000B6D8A /* libReact.a */; };
-		70221B752BF3A44B6BC9F34D /* Pods_VachanGo_tvOSTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 787CA0F4AC6CCB82310F2F49 /* Pods_VachanGo_tvOSTests.framework */; };
+		6078EC6F86CC0DA06E301D6E /* Pods_VachanGo_tvOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 272D1DCE3AB1291D312C002F /* Pods_VachanGo_tvOS.framework */; };
 		832341BD1AAA6AB300B99B32 /* libRCTText.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 832341B51AAA6A8300B99B32 /* libRCTText.a */; };
+		A03DBFA18AFD84FB07422E40 /* libPods-VachanGo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 696442BAA5858D569F5B48D8 /* libPods-VachanGo.a */; };
 		ADBDB9381DFEBF1600ED6528 /* libRCTBlob.a in Frameworks */ = {isa = PBXBuildFile; fileRef = ADBDB9271DFEBF0700ED6528 /* libRCTBlob.a */; };
-		D48E0EF30EDD7EEE341F65BE /* Pods_VachanGo_tvOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7CEFF33AF8ED334AE351372E /* Pods_VachanGo_tvOS.framework */; };
+		C1D844596D57756A7EA20021 /* libPods-VachanGo-tvOSTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F43B1C10172B60A8216BB060 /* libPods-VachanGo-tvOSTests.a */; };
+		DDDF0C3F5E1089DC02F35CC8 /* libPods-VachanGoTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 79A0EE5C8B46CA22964983B0 /* libPods-VachanGoTests.a */; };
 		EB30D21F25F1F98D004DE75E /* libRNCWebView.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EB30D21125F1F97E004DE75E /* libRNCWebView.a */; };
 		EB30D22B25F1F9F5004DE75E /* libReact-Native-Webview-Bridge.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EB30D22525F1F9B9004DE75E /* libReact-Native-Webview-Bridge.a */; };
 		EB30D24125F1FF13004DE75E /* libRealmJS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EB30D24025F1FF13004DE75E /* libRealmJS.a */; };
@@ -51,7 +52,6 @@
 		EB4A097F25F8D64A00843F9D /* leveldb-library.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB4A096525F8D64A00843F9D /* leveldb-library.framework */; };
 		EB4A098025F8D64A00843F9D /* FirebaseDatabase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB4A096625F8D64A00843F9D /* FirebaseDatabase.framework */; };
 		EB4A098125F8D64A00843F9D /* FirebaseDatabase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB4A096625F8D64A00843F9D /* FirebaseDatabase.framework */; };
-		EB4A098225F8D64A00843F9D /* GTMSessionFetcher.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB4A096825F8D64A00843F9D /* GTMSessionFetcher.framework */; };
 		EB4A098325F8D64A00843F9D /* GTMSessionFetcher.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB4A096825F8D64A00843F9D /* GTMSessionFetcher.framework */; };
 		EB4A098425F8D64A00843F9D /* FirebaseAuth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB4A096925F8D64A00843F9D /* FirebaseAuth.framework */; };
 		EB4A098525F8D64A00843F9D /* FirebaseAuth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB4A096925F8D64A00843F9D /* FirebaseAuth.framework */; };
@@ -89,6 +89,7 @@
 		EB4A09A525F8D64A00843F9D /* FirebaseInstanceID.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB4A097C25F8D64A00843F9D /* FirebaseInstanceID.framework */; };
 		EB4A09A625F8D64A00843F9D /* FirebaseCoreDiagnostics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB4A097D25F8D64A00843F9D /* FirebaseCoreDiagnostics.framework */; };
 		EB4A09A725F8D64A00843F9D /* FirebaseCoreDiagnostics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB4A097D25F8D64A00843F9D /* FirebaseCoreDiagnostics.framework */; };
+		EB65081C261DA89E00644F63 /* JavaScriptCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB6507E7261DA89E00644F63 /* JavaScriptCore.framework */; };
 		EB6B001E25F100AC005DD52A /* libRNVectorIcons.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EB6B001525F1008C005DD52A /* libRNVectorIcons.a */; };
 		EB6B001F25F100B3005DD52A /* libRNGestureHandler.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EB6BFFF625F10037005DD52A /* libRNGestureHandler.a */; };
 		EB6B002025F100BF005DD52A /* libRNReanimated.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EB6B000625F10062005DD52A /* libRNReanimated.a */; };
@@ -124,9 +125,6 @@
 		EBB352B5261333010005AC7F /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = EBB352B4261333000005AC7F /* GoogleService-Info.plist */; };
 		EBB352B6261333010005AC7F /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = EBB352B4261333000005AC7F /* GoogleService-Info.plist */; };
 		EBB3724925FB589A001D8CF4 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = EBB3724825FB589A001D8CF4 /* libz.tbd */; };
-		ED297163215061F000B7C4FE /* JavaScriptCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED297162215061F000B7C4FE /* JavaScriptCore.framework */; };
-		ED2971652150620600B7C4FE /* JavaScriptCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED2971642150620600B7C4FE /* JavaScriptCore.framework */; };
-		FE9003D776EFBBBF9D88891B /* Pods_VachanGoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 215A810C7BF8A09D766A0251 /* Pods_VachanGoTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -530,24 +528,25 @@
 		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = VachanGo/Info.plist; sourceTree = "<group>"; };
 		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = VachanGo/main.m; sourceTree = "<group>"; };
 		146833FF1AC3E56700842450 /* React.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = React.xcodeproj; path = "../node_modules/react-native/React/React.xcodeproj"; sourceTree = "<group>"; };
-		215A810C7BF8A09D766A0251 /* Pods_VachanGoTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VachanGoTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1D2E2F973612A27D1F8F630E /* Pods-VachanGo-tvOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VachanGo-tvOS.release.xcconfig"; path = "Target Support Files/Pods-VachanGo-tvOS/Pods-VachanGo-tvOS.release.xcconfig"; sourceTree = "<group>"; };
+		230F78C4C5A85AC517DF0C4D /* Pods-VachanGoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VachanGoTests.release.xcconfig"; path = "Target Support Files/Pods-VachanGoTests/Pods-VachanGoTests.release.xcconfig"; sourceTree = "<group>"; };
+		268471744C743180005BDCE8 /* Pods-VachanGo-tvOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VachanGo-tvOSTests.release.xcconfig"; path = "Target Support Files/Pods-VachanGo-tvOSTests/Pods-VachanGo-tvOSTests.release.xcconfig"; sourceTree = "<group>"; };
+		272D1DCE3AB1291D312C002F /* Pods_VachanGo_tvOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VachanGo_tvOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D02E47B1E0B4A5D006451C7 /* VachanGo-tvOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "VachanGo-tvOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D02E4901E0B4A5D006451C7 /* VachanGo-tvOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "VachanGo-tvOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D16E6891FA4F8E400B85C8A /* libReact.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libReact.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		5AD6EAE261B439416B2E88E0 /* Pods-VachanGoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VachanGoTests.debug.xcconfig"; path = "Target Support Files/Pods-VachanGoTests/Pods-VachanGoTests.debug.xcconfig"; sourceTree = "<group>"; };
+		4B8A388154BA529167D07BD3 /* Pods-VachanGo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VachanGo.release.xcconfig"; path = "Target Support Files/Pods-VachanGo/Pods-VachanGo.release.xcconfig"; sourceTree = "<group>"; };
 		5E91572D1DD0AC6500FF2AA8 /* RCTAnimation.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTAnimation.xcodeproj; path = "../node_modules/react-native/Libraries/NativeAnimation/RCTAnimation.xcodeproj"; sourceTree = "<group>"; };
-		787CA0F4AC6CCB82310F2F49 /* Pods_VachanGo_tvOSTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VachanGo_tvOSTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		696442BAA5858D569F5B48D8 /* libPods-VachanGo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-VachanGo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		78C398B01ACF4ADC00677621 /* RCTLinking.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTLinking.xcodeproj; path = "../node_modules/react-native/Libraries/LinkingIOS/RCTLinking.xcodeproj"; sourceTree = "<group>"; };
-		7BD22C8BF1CE27824B8A7EC7 /* Pods-VachanGoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VachanGoTests.release.xcconfig"; path = "Target Support Files/Pods-VachanGoTests/Pods-VachanGoTests.release.xcconfig"; sourceTree = "<group>"; };
-		7CEFF33AF8ED334AE351372E /* Pods_VachanGo_tvOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VachanGo_tvOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		79A0EE5C8B46CA22964983B0 /* libPods-VachanGoTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-VachanGoTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		82C618998A7B6C6A36162F23 /* Pods-VachanGoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VachanGoTests.debug.xcconfig"; path = "Target Support Files/Pods-VachanGoTests/Pods-VachanGoTests.debug.xcconfig"; sourceTree = "<group>"; };
 		832341B01AAA6A8300B99B32 /* RCTText.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTText.xcodeproj; path = "../node_modules/react-native/Libraries/Text/RCTText.xcodeproj"; sourceTree = "<group>"; };
 		ADBDB91F1DFEBF0600ED6528 /* RCTBlob.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTBlob.xcodeproj; path = "../node_modules/react-native/Libraries/Blob/RCTBlob.xcodeproj"; sourceTree = "<group>"; };
-		ADFD304605478EEE88383640 /* Pods_VachanGo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VachanGo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		AE9FE9735BB244EFB69FE62B /* Pods-VachanGo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VachanGo.debug.xcconfig"; path = "Target Support Files/Pods-VachanGo/Pods-VachanGo.debug.xcconfig"; sourceTree = "<group>"; };
-		C4D8A8BBC189299F41C15BF2 /* Pods-VachanGo-tvOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VachanGo-tvOS.release.xcconfig"; path = "Target Support Files/Pods-VachanGo-tvOS/Pods-VachanGo-tvOS.release.xcconfig"; sourceTree = "<group>"; };
-		CC75917906A867BF5F533DCA /* Pods-VachanGo-tvOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VachanGo-tvOS.debug.xcconfig"; path = "Target Support Files/Pods-VachanGo-tvOS/Pods-VachanGo-tvOS.debug.xcconfig"; sourceTree = "<group>"; };
-		CD7940C071B5BADFAB8CD32A /* Pods-VachanGo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VachanGo.release.xcconfig"; path = "Target Support Files/Pods-VachanGo/Pods-VachanGo.release.xcconfig"; sourceTree = "<group>"; };
+		BEFD790D5CF5E384DF918DF1 /* Pods-VachanGo-tvOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VachanGo-tvOSTests.debug.xcconfig"; path = "Target Support Files/Pods-VachanGo-tvOSTests/Pods-VachanGo-tvOSTests.debug.xcconfig"; sourceTree = "<group>"; };
 		CF345AA4AF3149638444E4C6 /* RNGoogleSignin.xcodeproj */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = "wrapper.pb-project"; name = RNGoogleSignin.xcodeproj; path = "../node_modules/react-native-google-signin/ios/RNGoogleSignin.xcodeproj"; sourceTree = "<group>"; };
+		D1FD8841F1EC11E0975C8B23 /* Pods-VachanGo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VachanGo.debug.xcconfig"; path = "Target Support Files/Pods-VachanGo/Pods-VachanGo.debug.xcconfig"; sourceTree = "<group>"; };
+		D44A731B9A66DAE5AAB6D7B5 /* Pods-VachanGo-tvOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VachanGo-tvOS.debug.xcconfig"; path = "Target Support Files/Pods-VachanGo-tvOS/Pods-VachanGo-tvOS.debug.xcconfig"; sourceTree = "<group>"; };
 		E33DBFA73C0F494397F4F915 /* libRNGoogleSignin.a */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = archive.ar; path = libRNGoogleSignin.a; sourceTree = "<group>"; };
 		EB30D1E725F1F97E004DE75E /* RNCWebView.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RNCWebView.xcodeproj; path = "../node_modules/react-native-webview/ios/RNCWebView.xcodeproj"; sourceTree = "<group>"; };
 		EB30D22025F1F9B9004DE75E /* React-Native-Webview-Bridge.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = "React-Native-Webview-Bridge.xcodeproj"; path = "../node_modules/react-native-webview-bridge/ios/React-Native-Webview-Bridge.xcodeproj"; sourceTree = "<group>"; };
@@ -576,6 +575,7 @@
 		EB4A097B25F8D64A00843F9D /* FIRAnalyticsConnector.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FIRAnalyticsConnector.framework; sourceTree = "<group>"; };
 		EB4A097C25F8D64A00843F9D /* FirebaseInstanceID.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FirebaseInstanceID.framework; sourceTree = "<group>"; };
 		EB4A097D25F8D64A00843F9D /* FirebaseCoreDiagnostics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FirebaseCoreDiagnostics.framework; sourceTree = "<group>"; };
+		EB6507E7261DA89E00644F63 /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 		EB6B000025F10061005DD52A /* RNReanimated.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RNReanimated.xcodeproj; path = "../node_modules/react-native-reanimated/ios/RNReanimated.xcodeproj"; sourceTree = "<group>"; };
 		EB6B000F25F1008C005DD52A /* RNVectorIcons.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RNVectorIcons.xcodeproj; path = "../node_modules/react-native-vector-icons/RNVectorIcons.xcodeproj"; sourceTree = "<group>"; };
 		EB6BFFC925F10037005DD52A /* RNGestureHandler.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RNGestureHandler.xcodeproj; path = "../node_modules/react-native-gesture-handler/ios/RNGestureHandler.xcodeproj"; sourceTree = "<group>"; };
@@ -609,10 +609,7 @@
 		EB9DC55025F62C9600D562BE /* RNFirebase.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RNFirebase.xcodeproj; path = "../node_modules/react-native-firebase/ios/RNFirebase.xcodeproj"; sourceTree = "<group>"; };
 		EBB352B4261333000005AC7F /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		EBB3724825FB589A001D8CF4 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
-		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
-		ED2971642150620600B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = Platforms/AppleTVOS.platform/Developer/SDKs/AppleTVOS12.0.sdk/System/Library/Frameworks/JavaScriptCore.framework; sourceTree = DEVELOPER_DIR; };
-		EE34F30C64FEA2135A42F7BB /* Pods-VachanGo-tvOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VachanGo-tvOSTests.debug.xcconfig"; path = "Target Support Files/Pods-VachanGo-tvOSTests/Pods-VachanGo-tvOSTests.debug.xcconfig"; sourceTree = "<group>"; };
-		EEAB4EA6F1C619F00FD6C1CA /* Pods-VachanGo-tvOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VachanGo-tvOSTests.release.xcconfig"; path = "Target Support Files/Pods-VachanGo-tvOSTests/Pods-VachanGo-tvOSTests.release.xcconfig"; sourceTree = "<group>"; };
+		F43B1C10172B60A8216BB060 /* libPods-VachanGo-tvOSTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-VachanGo-tvOSTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -621,7 +618,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				140ED2AC1D01E1AD002B40FF /* libReact.a in Frameworks */,
-				FE9003D776EFBBBF9D88891B /* Pods_VachanGoTests.framework in Frameworks */,
+				DDDF0C3F5E1089DC02F35CC8 /* libPods-VachanGoTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -629,6 +626,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EB65081C261DA89E00644F63 /* JavaScriptCore.framework in Frameworks */,
 				146834051AC3E58100842450 /* libReact.a in Frameworks */,
 				EBB3724925FB589A001D8CF4 /* libz.tbd in Frameworks */,
 				EB9DC55B25F62CAA00D562BE /* libRNFirebase.a in Frameworks */,
@@ -648,10 +646,8 @@
 				EB6B001F25F100B3005DD52A /* libRNGestureHandler.a in Frameworks */,
 				EB9A847325F0CBB50074921A /* libRNFS.a in Frameworks */,
 				EB4A097E25F8D64A00843F9D /* leveldb-library.framework in Frameworks */,
-				EB4A098225F8D64A00843F9D /* GTMSessionFetcher.framework in Frameworks */,
 				EB9A841725F0BD110074921A /* libSplashScreen.a in Frameworks */,
 				EB4A099E25F8D64A00843F9D /* GoogleUtilities.framework in Frameworks */,
-				ED297163215061F000B7C4FE /* JavaScriptCore.framework in Frameworks */,
 				ADBDB9381DFEBF1600ED6528 /* libRCTBlob.a in Frameworks */,
 				EB4A098825F8D64A00843F9D /* Protobuf.framework in Frameworks */,
 				EB4A098C25F8D64A00843F9D /* FirebaseCrash.framework in Frameworks */,
@@ -670,7 +666,7 @@
 				139FDEF61B0652A700C62182 /* libRCTWebSocket.a in Frameworks */,
 				EB4A09A225F8D64A00843F9D /* FIRAnalyticsConnector.framework in Frameworks */,
 				17B7A4980B584B0A8C3DA88D /* libRNGoogleSignin.a in Frameworks */,
-				145958082E3D4E7375CA5530 /* Pods_VachanGo.framework in Frameworks */,
+				A03DBFA18AFD84FB07422E40 /* libPods-VachanGo.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -678,7 +674,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ED2971652150620600B7C4FE /* JavaScriptCore.framework in Frameworks */,
 				EB4A099925F8D64A00843F9D /* GoogleAppMeasurement.framework in Frameworks */,
 				EB4A099B25F8D64A00843F9D /* FirebaseCore.framework in Frameworks */,
 				2D16E6881FA4F8E400B85C8A /* libReact.a in Frameworks */,
@@ -702,7 +697,7 @@
 				EB4A09A725F8D64A00843F9D /* FirebaseCoreDiagnostics.framework in Frameworks */,
 				EB4A099F25F8D64A00843F9D /* GoogleUtilities.framework in Frameworks */,
 				EB4A098D25F8D64A00843F9D /* FirebaseCrash.framework in Frameworks */,
-				D48E0EF30EDD7EEE341F65BE /* Pods_VachanGo_tvOS.framework in Frameworks */,
+				6078EC6F86CC0DA06E301D6E /* Pods_VachanGo_tvOS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -711,7 +706,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2DF0FFEE2056DD460020B375 /* libReact.a in Frameworks */,
-				70221B752BF3A44B6BC9F34D /* Pods_VachanGo_tvOSTests.framework in Frameworks */,
+				C1D844596D57756A7EA20021 /* libPods-VachanGo-tvOSTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -840,15 +835,14 @@
 		2D16E6871FA4F8E400B85C8A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				EB6507E7261DA89E00644F63 /* JavaScriptCore.framework */,
 				EBB3724825FB589A001D8CF4 /* libz.tbd */,
 				EB30D24025F1FF13004DE75E /* libRealmJS.a */,
-				ED297162215061F000B7C4FE /* JavaScriptCore.framework */,
-				ED2971642150620600B7C4FE /* JavaScriptCore.framework */,
 				2D16E6891FA4F8E400B85C8A /* libReact.a */,
-				ADFD304605478EEE88383640 /* Pods_VachanGo.framework */,
-				7CEFF33AF8ED334AE351372E /* Pods_VachanGo_tvOS.framework */,
-				787CA0F4AC6CCB82310F2F49 /* Pods_VachanGo_tvOSTests.framework */,
-				215A810C7BF8A09D766A0251 /* Pods_VachanGoTests.framework */,
+				696442BAA5858D569F5B48D8 /* libPods-VachanGo.a */,
+				272D1DCE3AB1291D312C002F /* Pods_VachanGo_tvOS.framework */,
+				F43B1C10172B60A8216BB060 /* libPods-VachanGo-tvOSTests.a */,
+				79A0EE5C8B46CA22964983B0 /* libPods-VachanGoTests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -941,14 +935,14 @@
 		8595D18F5DCDC17147C11AFE /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				AE9FE9735BB244EFB69FE62B /* Pods-VachanGo.debug.xcconfig */,
-				CD7940C071B5BADFAB8CD32A /* Pods-VachanGo.release.xcconfig */,
-				CC75917906A867BF5F533DCA /* Pods-VachanGo-tvOS.debug.xcconfig */,
-				C4D8A8BBC189299F41C15BF2 /* Pods-VachanGo-tvOS.release.xcconfig */,
-				EE34F30C64FEA2135A42F7BB /* Pods-VachanGo-tvOSTests.debug.xcconfig */,
-				EEAB4EA6F1C619F00FD6C1CA /* Pods-VachanGo-tvOSTests.release.xcconfig */,
-				5AD6EAE261B439416B2E88E0 /* Pods-VachanGoTests.debug.xcconfig */,
-				7BD22C8BF1CE27824B8A7EC7 /* Pods-VachanGoTests.release.xcconfig */,
+				D1FD8841F1EC11E0975C8B23 /* Pods-VachanGo.debug.xcconfig */,
+				4B8A388154BA529167D07BD3 /* Pods-VachanGo.release.xcconfig */,
+				D44A731B9A66DAE5AAB6D7B5 /* Pods-VachanGo-tvOS.debug.xcconfig */,
+				1D2E2F973612A27D1F8F630E /* Pods-VachanGo-tvOS.release.xcconfig */,
+				BEFD790D5CF5E384DF918DF1 /* Pods-VachanGo-tvOSTests.debug.xcconfig */,
+				268471744C743180005BDCE8 /* Pods-VachanGo-tvOSTests.release.xcconfig */,
+				82C618998A7B6C6A36162F23 /* Pods-VachanGoTests.debug.xcconfig */,
+				230F78C4C5A85AC517DF0C4D /* Pods-VachanGoTests.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -1161,7 +1155,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "VachanGoTests" */;
 			buildPhases = (
-				A87BF47890818FA212FA3A66 /* [CP] Check Pods Manifest.lock */,
+				CCB2170E311BB81B09F424C6 /* [CP] Check Pods Manifest.lock */,
 				00E356EA1AD99517003FC87E /* Sources */,
 				00E356EB1AD99517003FC87E /* Frameworks */,
 				00E356EC1AD99517003FC87E /* Resources */,
@@ -1180,13 +1174,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "VachanGo" */;
 			buildPhases = (
-				B9F1C71588B88DE3B89B031F /* [CP] Check Pods Manifest.lock */,
+				E71D4B004F838E33E6375933 /* [CP] Check Pods Manifest.lock */,
 				13B07F871A680F5B00A75B9A /* Sources */,
 				13B07F8C1A680F5B00A75B9A /* Frameworks */,
 				13B07F8E1A680F5B00A75B9A /* Resources */,
 				00DD1BFF1BD5951E006B06BC /* Bundle React Native code and images */,
-				7103395E7C857EFA4C6EC917 /* [CP] Embed Pods Frameworks */,
-				86D6A9FE6D600E9D9842A833 /* [CP] Copy Pods Resources */,
+				39D04680270EDC7A9DF444EA /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -1201,7 +1194,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2D02E4BA1E0B4A5E006451C7 /* Build configuration list for PBXNativeTarget "VachanGo-tvOS" */;
 			buildPhases = (
-				1B9F474B29C59D729BF92E4F /* [CP] Check Pods Manifest.lock */,
+				FF460EBAF1FE60018AF8F42A /* [CP] Check Pods Manifest.lock */,
 				2D02E4771E0B4A5D006451C7 /* Sources */,
 				2D02E4781E0B4A5D006451C7 /* Frameworks */,
 				2D02E4791E0B4A5D006451C7 /* Resources */,
@@ -1220,7 +1213,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2D02E4BB1E0B4A5E006451C7 /* Build configuration list for PBXNativeTarget "VachanGo-tvOSTests" */;
 			buildPhases = (
-				AA94FAA423E031E2E18AC9E2 /* [CP] Check Pods Manifest.lock */,
+				C23A15728B46F63E4FE9FB0E /* [CP] Check Pods Manifest.lock */,
 				2D02E48C1E0B4A5D006451C7 /* Sources */,
 				2D02E48D1E0B4A5D006451C7 /* Frameworks */,
 				2D02E48E1E0B4A5D006451C7 /* Resources */,
@@ -1247,6 +1240,9 @@
 					00E356ED1AD99517003FC87E = {
 						CreatedOnToolsVersion = 6.2;
 						TestTargetID = 13B07F861A680F5B00A75B9A;
+					};
+					13B07F861A680F5B00A75B9A = {
+						ProvisioningStyle = Manual;
 					};
 					2D02E47A1E0B4A5D006451C7 = {
 						CreatedOnToolsVersion = 8.2.1;
@@ -1866,28 +1862,6 @@
 			shellPath = /bin/sh;
 			shellScript = "export NODE_BINARY=node\n../node_modules/react-native/scripts/react-native-xcode.sh\n";
 		};
-		1B9F474B29C59D729BF92E4F /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-VachanGo-tvOS-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
 		2D02E4CB1E0B4B27006451C7 /* Bundle React Native Code And Images */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -1902,29 +1876,7 @@
 			shellPath = /bin/sh;
 			shellScript = "export NODE_BINARY=node\n../node_modules/react-native/scripts/react-native-xcode.sh";
 		};
-		7103395E7C857EFA4C6EC917 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-VachanGo/Pods-VachanGo-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/AppAuth/AppAuth.framework",
-				"${BUILT_PRODUCTS_DIR}/GTMAppAuth/GTMAppAuth.framework",
-				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AppAuth.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMAppAuth.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-VachanGo/Pods-VachanGo-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		86D6A9FE6D600E9D9842A833 /* [CP] Copy Pods Resources */ = {
+		39D04680270EDC7A9DF444EA /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -1942,29 +1894,7 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-VachanGo/Pods-VachanGo-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		A87BF47890818FA212FA3A66 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-VachanGoTests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		AA94FAA423E031E2E18AC9E2 /* [CP] Check Pods Manifest.lock */ = {
+		C23A15728B46F63E4FE9FB0E /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -1986,7 +1916,29 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		B9F1C71588B88DE3B89B031F /* [CP] Check Pods Manifest.lock */ = {
+		CCB2170E311BB81B09F424C6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-VachanGoTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E71D4B004F838E33E6375933 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -2002,6 +1954,28 @@
 			);
 			outputPaths = (
 				"$(DERIVED_FILE_DIR)/Pods-VachanGo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FF460EBAF1FE60018AF8F42A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-VachanGo-tvOS-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -2075,7 +2049,7 @@
 /* Begin XCBuildConfiguration section */
 		00E356F61AD99517003FC87E /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5AD6EAE261B439416B2E88E0 /* Pods-VachanGoTests.debug.xcconfig */;
+			baseConfigurationReference = 82C618998A7B6C6A36162F23 /* Pods-VachanGoTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				GCC_PREPROCESSOR_DEFINITIONS = (
@@ -2105,7 +2079,7 @@
 		};
 		00E356F71AD99517003FC87E /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7BD22C8BF1CE27824B8A7EC7 /* Pods-VachanGoTests.release.xcconfig */;
+			baseConfigurationReference = 230F78C4C5A85AC517DF0C4D /* Pods-VachanGoTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				COPY_PHASE_STRIP = NO;
@@ -2132,11 +2106,17 @@
 		};
 		13B07F941A680F5B00A75B9A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = AE9FE9735BB244EFB69FE62B /* Pods-VachanGo.debug.xcconfig */;
+			baseConfigurationReference = D1FD8841F1EC11E0975C8B23 /* Pods-VachanGo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				BITCODE_GENERATION_MODE = bitcode;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
 				DEAD_CODE_STRIPPING = NO;
+				DEVELOPMENT_TEAM = "";
+				"EXCLUDED_SOURCE_FILE_NAMES[sdk=iphonesimulator*]" = arm64;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseAuth\"",
@@ -2160,34 +2140,34 @@
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)/../node_modules/react-native-google-signin/ios/RNGoogleSignin",
-				);
-				"HEADER_SEARCH_PATHS[arch=*]" = (
-					"$(SRCROOT)/../node_modules/react-native-webview-bridge/ios/",
-					"$(SRCROOT)/../node_modules/react-native-webview/ios/",
-					"$(SRCROOT)/Firebase/",
-					"$(SRCROOT)/../../react-native/React/",
-					"$(SRCROOT)/../../react-native/",
 					"$(SRCROOT)/../node_modules/react-native-splash-screen/ios/",
 				);
 				INFOPLIST_FILE = VachanGo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_CFLAGS = "-fembed-bitcode";
 				OTHER_LDFLAGS = (
 					"$(inherited)",
-					"-ObjC",
 					"-lc++",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = VachanGo;
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = Debug;
 		};
 		13B07F951A680F5B00A75B9A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = CD7940C071B5BADFAB8CD32A /* Pods-VachanGo.release.xcconfig */;
+			baseConfigurationReference = 4B8A388154BA529167D07BD3 /* Pods-VachanGo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				BITCODE_GENERATION_MODE = bitcode;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				"EXCLUDED_SOURCE_FILE_NAMES[sdk=iphonesimulator*]" = arm64;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseAuth\"",
@@ -2211,16 +2191,19 @@
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)/../node_modules/react-native-google-signin/ios/RNGoogleSignin",
+					"$(SRCROOT)/../node_modules/react-native-webview/ios/",
 				);
 				INFOPLIST_FILE = VachanGo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_CFLAGS = "-fembed-bitcode";
 				OTHER_LDFLAGS = (
 					"$(inherited)",
-					"-ObjC",
 					"-lc++",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = VachanGo;
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				"USER_HEADER_SEARCH_PATHS[arch=*]" = "";
 				VERSIONING_SYSTEM = "apple-generic";
 			};
@@ -2228,7 +2211,7 @@
 		};
 		2D02E4971E0B4A5E006451C7 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = CC75917906A867BF5F533DCA /* Pods-VachanGo-tvOS.debug.xcconfig */;
+			baseConfigurationReference = D44A731B9A66DAE5AAB6D7B5 /* Pods-VachanGo-tvOS.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -2270,7 +2253,7 @@
 		};
 		2D02E4981E0B4A5E006451C7 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C4D8A8BBC189299F41C15BF2 /* Pods-VachanGo-tvOS.release.xcconfig */;
+			baseConfigurationReference = 1D2E2F973612A27D1F8F630E /* Pods-VachanGo-tvOS.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -2312,7 +2295,7 @@
 		};
 		2D02E4991E0B4A5E006451C7 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = EE34F30C64FEA2135A42F7BB /* Pods-VachanGo-tvOSTests.debug.xcconfig */;
+			baseConfigurationReference = BEFD790D5CF5E384DF918DF1 /* Pods-VachanGo-tvOSTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CLANG_ANALYZER_NONNULL = YES;
@@ -2346,7 +2329,7 @@
 		};
 		2D02E49A1E0B4A5E006451C7 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = EEAB4EA6F1C619F00FD6C1CA /* Pods-VachanGo-tvOSTests.release.xcconfig */;
+			baseConfigurationReference = 268471744C743180005BDCE8 /* Pods-VachanGo-tvOSTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CLANG_ANALYZER_NONNULL = YES;
